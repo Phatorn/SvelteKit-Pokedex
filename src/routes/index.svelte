@@ -20,7 +20,7 @@
 	//import type {Pokeman} from "../types/pokeman"
 	//import { each } from "svelte/internal"
 	//import {pokemon} from "../stores/pokestore"
-	import PokemanCard from '../components/pokemanCard.svelte'
+	import PokemanCard from "../components/pokemanCard.svelte"
 	export let pokemon: any
 	//console.log($pokemon)
 	let searchTerm = '';
@@ -29,7 +29,7 @@
 	$: {
 		//console.log(searchTerm)
 		if (searchTerm) {
-			filteredPokemon = pokemon.filter((pokeman) =>
+			filteredPokemon = pokemon.filter((pokeman: any) =>
 				pokeman.name.toLowerCase().includes(searchTerm.toLowerCase())
 			);
 		} else {
