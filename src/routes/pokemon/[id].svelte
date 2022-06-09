@@ -18,5 +18,5 @@
         | Height: <strong>{pokeman.height}</strong>
         | Weight: <strong>{pokeman.weight}</strong>
     </p>
-    <img class="card-image" src="{pokeman.sprites['front_default']}" alt={pokeman.name}>
+    <img class="h-40 w-40 card-image" src="{pokeman.sprites['front_default']}" alt={pokeman.name}>
 </div>
