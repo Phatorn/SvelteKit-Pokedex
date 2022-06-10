@@ -1,4 +1,5 @@
 <script lang="ts" context="module">
+	let thisIsNewBranch: string
 	export async function load() {
 		const url = `https://pokeapi.co/api/v2/pokemon?limit=150`;
 		const res = await fetch(url);
